@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Nanum+Gothic+Coding&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@400..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background: var(--primary-color);
+  color: var(--border-color);
+}
+
+
+*::-webkit-scrollbar{
+  width: 15px;
+  
+}
+*::-webkit-scrollbar-track{
+  background: #2d2d31;
+}
+*::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+}
+
+
+:root {
+  --primary-color: #e1b42f;
+  --bg-color:#000;
+  --main-txt-color:#fff;
+  --normal-w-color:#777e90;
+  --second-bg-color:#141416;
+  --p-color:#d2d2d2;
+  --border-color:#2d2d31;
+}
+
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+.btn {
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin: 8px;
+    padding: 11px 24px;
+    cursor: pointer;
+    border: none;
+    background: #e1b42f;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.small{
+   color: var(--primary-color);
+   font-weight: 600;
+   padding-bottom: 1rem;
+   display: block;
+   text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

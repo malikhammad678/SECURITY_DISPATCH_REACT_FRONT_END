@@ -1,0 +1,76 @@
+.coding_blog .box_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.coding_blog .box_container .box {
+    min-height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    background: var(--second-bg-color);
+    display: flex;
+    flex-direction: column; 
+}
+
+.coding_blog .box_container .box .image {
+    width: 100%;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.coding_blog .box_container .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: transform 0.3s ease;
+}
+
+.coding_blog .box_container .box .image .icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.coding_blog .box_container .box .image .icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.coding_blog .box_container .box .flex {
+    padding: 3rem 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: -20px;
+}
+
+.coding_blog .box_container .box .flex .window {
+    background-color: var(--border-color);
+    color: #d2d2d2;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.coding_blog .box_container .box .title {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}

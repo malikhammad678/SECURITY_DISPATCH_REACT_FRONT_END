@@ -1,0 +1,111 @@
+.suggested {
+    padding: 2rem 4rem;
+    color: #fff ;
+    background-color: var(--second-bg-color);
+}
+.suggested .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggested .header span {
+    display: block;
+    color: var(--normal-w-color);
+    font-size: 1.3rem;
+}
+.suggested .header .link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.suggested .blog_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 4rem 2rem;
+}
+.suggested .blog_container .blog {
+    background-color: var(--second-bg-color);
+    overflow: hidden;
+    text-decoration: none;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    min-height: 450px;
+    animation: fadeIn .7s ease-in-out;
+    transition: .4s ease;
+    border: 1px solid #141416;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+}
+.suggested .blog_container .blog:hover {
+    transform: scale(1.01);
+    border: 1px solid var(--normal-w-color);
+}
+.suggested .blog_container .blog .image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.suggested .blog_container .blog .content {
+    padding: 15px;
+}
+.suggested .blog_container .blog .content h2 {
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem 0 1rem 0;
+}
+.suggested .blog_container .blog .flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.suggested .blog_container .blog .flex .name {
+    padding: 5px 10px;
+    background-color: rgba(62, 61, 61, 0.4);
+    color: var(--normal-w-color);
+    border-radius: 15px;
+}
+.suggested .blog_container .blog .author {
+    display: block;
+    margin: 1.5rem 0;
+    color: var(--normal-w-color);
+    font-weight: 600;
+}
+.suggested .blog_container .blog button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 10px 22px;
+    border: none;
+    outline: none;
+    background: rgb(225, 180, .1);
+    border-radius: 10px;
+    font-weight: 550;
+    font-size: 1rem;
+}
+
+@media (max-width:768px){
+    .suggested .blog_container {
+        padding: 3rem 1rem;
+        justify-content: center;
+        gap: 3rem;
+
+    }
+    .suggested .blog_container .blog {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width:480px){
+    .suggested{
+        padding: 1rem 1rem;
+    }
+    .suggested .blog_container .blog .flex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .suggested .header span  {
+        font-size: 1rem;
+    }
+}

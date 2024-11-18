@@ -1,0 +1,16 @@
+.blog_title {
+    text-align: center;
+    margin: 2rem 0;
+    color: #fff ;
+    font-size: 2rem;
+}
+.blog_title .pre_head {
+    color: var(--primary-color);
+}
+
+
+@media (max-width:600px){
+    .blog_title {
+        font-size: 1.3rem;
+    }
+}

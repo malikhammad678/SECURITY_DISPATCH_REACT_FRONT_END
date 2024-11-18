@@ -1,0 +1,50 @@
+.terminal{
+    min-height: 50vh;margin: 1rem 0;
+}
+.terminal .header {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+    background: var(--second-bg-color);
+    position: relative;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+.terminal .header .dots {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.terminal .header .dots .dot1 {
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background: red;
+}
+.terminal .header .dots .dot2 {
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background: yellow;
+}
+.terminal .header .dots .dot3 {
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background: green;
+}
+.terminal .name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.terminal .terminal_body {
+    background: var(--border-color);
+    min-height: 40vh;
+    padding: .5rem .5rem;
+}
+.terminal .terminal_body .code {
+    font-size: .8rem;
+    margin: .5rem 0;
+}

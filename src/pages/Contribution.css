@@ -1,0 +1,97 @@
+.main {
+    min-height: 100vh;
+}
+.main .contribution {
+    max-width: 1100px;
+    background: var(--second-bg-color);
+    width: 100%;
+    margin: 2rem auto;
+    min-height: 100vh;
+    padding: 30px;
+    animation: fadeIn .7s ease-in-out;
+}
+.main .contribution h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--p-color);
+}
+.main .contribution .leader_flex {
+    width: 100%;
+}
+.main .contribution .leader_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    border-bottom: .5px solid var(--border-color);
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+}
+.main .contribution .leader_flex .content {
+  max-width: 70%;
+ width: 100%;
+}
+.main .contribution .leader_flex .image {
+    width: 200px;
+    height: 200%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid var(--primary-color);
+}
+.main .contribution .leader_flex .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main .contribution .leader_flex .name {
+    display: block;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 600;
+    width: fit-content;
+    text-decoration: none;
+}
+.main .contribution .leader_flex .name:hover {
+    text-decoration: underline;
+}
+.main .contribution .leader_flex span {
+    display: block;
+    margin: 1rem 0;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.main .contribution .leader_flex .content p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: var(--normal-w-color);
+}
+.main .contribution .heading_2 {
+    margin: 3rem 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+}
+.main .contribution .heading_2_p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: var(--normal-w-color);
+    text-align: justify;
+    border-bottom: .5px solid var(--border-color);
+    padding-bottom: 2rem;
+}
+
+@media (max-width:600px){
+    .leader_flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main .contribution {
+        padding: 20px;
+    }
+    .main .contribution .leader_flex .content{
+        max-width: 100%;
+        width: 100%;
+    }
+}
